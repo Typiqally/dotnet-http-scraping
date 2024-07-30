@@ -1,4 +1,4 @@
-namespace Tpcly.Http;
+namespace Tpcly.Http.Scraping;
 
 public enum RotationMode
 {

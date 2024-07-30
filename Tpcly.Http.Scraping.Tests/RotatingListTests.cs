@@ -1,6 +1,6 @@
 using Moq;
 
-namespace Tpcly.Http.Tests;
+namespace Tpcly.Http.Scraping.Tests;
 
 public class RotatingListTests
 {

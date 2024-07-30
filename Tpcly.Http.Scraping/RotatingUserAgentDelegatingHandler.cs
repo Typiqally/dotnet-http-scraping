@@ -1,6 +1,6 @@
-using Tpcly.Http.Abstractions;
+using Tpcly.Http.Scraping.Abstractions;
 
-namespace Tpcly.Http;
+namespace Tpcly.Http.Scraping;
 
 public class RotatingUserAgentDelegatingHandler : DelegatingHandler
 {

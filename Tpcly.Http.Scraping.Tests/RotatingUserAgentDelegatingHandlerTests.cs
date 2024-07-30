@@ -2,9 +2,9 @@ using System.Net;
 using System.Net.Http.Headers;
 using Moq;
 using Moq.Protected;
-using Tpcly.Http.Abstractions;
+using Tpcly.Http.Scraping.Abstractions;
 
-namespace Tpcly.Http.Tests;
+namespace Tpcly.Http.Scraping.Tests;
 
 public class RotatingUserAgentDelegatingHandlerTests
 {

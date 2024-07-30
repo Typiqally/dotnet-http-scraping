@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Tests", "Tpcly.Http.Tests\Tpcly.Http.Tests.csproj", "{073A9375-AA23-4F60-BC2D-9759D080BF7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Scraping.Tests", "Tpcly.Http.Scraping.Tests\Tpcly.Http.Scraping.Tests.csproj", "{073A9375-AA23-4F60-BC2D-9759D080BF7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http", "Tpcly.Http\Tpcly.Http.csproj", "{2142B005-9BD3-49EC-B46B-B9E7C24A6976}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Scraping", "Tpcly.Http.Scraping\Tpcly.Http.Scraping.csproj", "{2142B005-9BD3-49EC-B46B-B9E7C24A6976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Abstractions", "Tpcly.Http.Abstractions\Tpcly.Http.Abstractions.csproj", "{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Scraping.Abstractions", "Tpcly.Http.Scraping.Abstractions\Tpcly.Http.Scraping.Abstractions.csproj", "{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

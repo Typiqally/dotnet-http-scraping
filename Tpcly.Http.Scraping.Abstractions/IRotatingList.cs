@@ -1,4 +1,4 @@
-namespace Tpcly.Http.Abstractions;
+namespace Tpcly.Http.Scraping.Abstractions;
 
 public interface IRotatingList<out T>
 {

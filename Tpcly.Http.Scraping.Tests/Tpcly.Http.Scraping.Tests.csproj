@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Tpcly.Http\Tpcly.Http.csproj" />
+      <ProjectReference Include="..\Tpcly.Http.Scraping\Tpcly.Http.Scraping.csproj" />
     </ItemGroup>
 
 </Project>
