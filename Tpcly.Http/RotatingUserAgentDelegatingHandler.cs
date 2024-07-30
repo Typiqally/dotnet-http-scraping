@@ -2,26 +2,25 @@ using Tpcly.Http.Abstractions;
 
 namespace Tpcly.Http;
 
-public class RotatingUserAgentDelegatingHandler(IUserAgentCollection userAgents, int rotationInterval, Random? random = null) : DelegatingHandler
+public class RotatingUserAgentDelegatingHandler : DelegatingHandler
 {
-    private readonly Random _random = random ?? new Random();
-    private int _currentIndex;
-    private string? _currentUserAgent;
+    private readonly IRotatingList<string> _userAgents;
+
+    public RotatingUserAgentDelegatingHandler(IRotatingList<string> userAgents)
+    {
+        _userAgents = userAgents;
+    }
+
+    public RotatingUserAgentDelegatingHandler(IRotatingList<string> userAgents, HttpMessageHandler innerHandler) : base(innerHandler)
+    {
+        _userAgents = userAgents;
+    }
 
     protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
-        if (_currentUserAgent == null || _currentIndex % rotationInterval == 0)
+        do
         {
-            // Reset current index
-            _currentIndex = 0;
-            
-            do
-            {
-                _currentUserAgent = userAgents.GetRandom(_random);
-            } while (!request.Headers.UserAgent.TryParseAdd(_currentUserAgent));
-        }
-
-        _currentIndex++;
+        } while (!request.Headers.UserAgent.TryParseAdd(_userAgents.Next()));
 
         return base.SendAsync(request, cancellationToken);
     }
