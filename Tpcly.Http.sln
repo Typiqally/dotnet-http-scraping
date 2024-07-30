@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Proxy", "Tpcly.Http.Proxy\Tpcly.Http.Proxy.csproj", "{64C1EE54-8422-4738-BD83-3ECFFFAF1E9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Tests", "Tpcly.Http.Tests\Tpcly.Http.Tests.csproj", "{073A9375-AA23-4F60-BC2D-9759D080BF7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.UserAgent", "Tpcly.Http.UserAgent\Tpcly.Http.UserAgent.csproj", "{28EAE62A-CE1B-4671-801D-166BB75A2AD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http", "Tpcly.Http\Tpcly.Http.csproj", "{2142B005-9BD3-49EC-B46B-B9E7C24A6976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.UserAgent.Tests", "Tpcly.Http.UserAgent.Tests\Tpcly.Http.UserAgent.Tests.csproj", "{073A9375-AA23-4F60-BC2D-9759D080BF7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tpcly.Http.Abstractions", "Tpcly.Http.Abstractions\Tpcly.Http.Abstractions.csproj", "{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,17 +12,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64C1EE54-8422-4738-BD83-3ECFFFAF1E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64C1EE54-8422-4738-BD83-3ECFFFAF1E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64C1EE54-8422-4738-BD83-3ECFFFAF1E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64C1EE54-8422-4738-BD83-3ECFFFAF1E9A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28EAE62A-CE1B-4671-801D-166BB75A2AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28EAE62A-CE1B-4671-801D-166BB75A2AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28EAE62A-CE1B-4671-801D-166BB75A2AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28EAE62A-CE1B-4671-801D-166BB75A2AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{073A9375-AA23-4F60-BC2D-9759D080BF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{073A9375-AA23-4F60-BC2D-9759D080BF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073A9375-AA23-4F60-BC2D-9759D080BF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073A9375-AA23-4F60-BC2D-9759D080BF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2142B005-9BD3-49EC-B46B-B9E7C24A6976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2142B005-9BD3-49EC-B46B-B9E7C24A6976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2142B005-9BD3-49EC-B46B-B9E7C24A6976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2142B005-9BD3-49EC-B46B-B9E7C24A6976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874DAAC0-AFCC-460F-A301-2DF76AD2BD6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

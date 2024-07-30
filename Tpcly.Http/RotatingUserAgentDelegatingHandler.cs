@@ -1,6 +1,8 @@
-namespace Tpcly.Http.UserAgent;
+using Tpcly.Http.Abstractions;
 
-public class RandomUserAgentDelegatingHandler(IUserAgentCollection userAgents, int rotationInterval, Random? random = null) : DelegatingHandler
+namespace Tpcly.Http;
+
+public class RotatingUserAgentDelegatingHandler(IUserAgentCollection userAgents, int rotationInterval, Random? random = null) : DelegatingHandler
 {
     private readonly Random _random = random ?? new Random();
     private int _currentIndex;

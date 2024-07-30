@@ -2,10 +2,11 @@ using System.Net;
 using System.Net.Http.Headers;
 using Moq;
 using Moq.Protected;
+using Tpcly.Http.Abstractions;
 
-namespace Tpcly.Http.UserAgent.Tests;
+namespace Tpcly.Http.Tests;
 
-public class RandomUserAgentDelegatingHandlerTests
+public class RotatingUserAgentDelegatingHandlerTests
 {
     private HttpRequestMessage _requestMock;
     private Mock<IUserAgentCollection> _userAgentCollectionMock;
@@ -32,7 +33,7 @@ public class RandomUserAgentDelegatingHandlerTests
     public async Task SendAsync_RequestMessage_AddsRandomUserAgent()
     {
         // Arrange
-        var handler = new RandomUserAgentDelegatingHandler(_userAgentCollectionMock.Object, 10)
+        var handler = new RotatingUserAgentDelegatingHandler(_userAgentCollectionMock.Object, 10)
         {
             InnerHandler = _innerHandlerMock.Object
         };
@@ -53,7 +54,7 @@ public class RandomUserAgentDelegatingHandlerTests
     public async Task SendAsync_RequestMessage_WithRotation_AddsRandomUserAgent_EveryRotation(int rotationInterval, int runTimes, int expectedRandomCalls)
     {
         // Arrange
-        var handler = new RandomUserAgentDelegatingHandler(_userAgentCollectionMock.Object, rotationInterval)
+        var handler = new RotatingUserAgentDelegatingHandler(_userAgentCollectionMock.Object, rotationInterval)
         {
             InnerHandler = _innerHandlerMock.Object
         };

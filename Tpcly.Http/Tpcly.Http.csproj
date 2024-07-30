@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Tpcly.Http.Abstractions\Tpcly.Http.Abstractions.csproj" />
+    </ItemGroup>
+
 </Project>

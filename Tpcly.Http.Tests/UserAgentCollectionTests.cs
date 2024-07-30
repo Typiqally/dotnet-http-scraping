@@ -1,6 +1,6 @@
 using Moq;
 
-namespace Tpcly.Http.UserAgent.Tests;
+namespace Tpcly.Http.Tests;
 
 public class UserAgentCollectionTests
 {

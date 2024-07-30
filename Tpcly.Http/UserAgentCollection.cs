@@ -1,4 +1,6 @@
-namespace Tpcly.Http.UserAgent;
+using Tpcly.Http.Abstractions;
+
+namespace Tpcly.Http;
 
 public class UserAgentCollection(IList<string> userAgents) : IUserAgentCollection
 {

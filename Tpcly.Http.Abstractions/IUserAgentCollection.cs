@@ -1,4 +1,4 @@
-namespace Tpcly.Http.UserAgent;
+namespace Tpcly.Http.Abstractions;
 
 public interface IUserAgentCollection
 {
